@@ -73,6 +73,10 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 ## [Tmux](https://en.wikipedia.org/wiki/Tmux)
 
 * Ctrl-B has been remapped to Ctrl-a
-* Use Option + movement keys for moving between panes. Left and right switching doesn't seem to work 
+* Use vim movement keys to navigate panes
+	* h - left
+	* l - right
+	* j - down
+	* k - up
 * Copy buffer is coppied to xclip.
 * Status bar tells you date, time, user, and hostname. Especially useful with nested ssh sessions. 
