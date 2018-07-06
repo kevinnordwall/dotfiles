@@ -70,13 +70,17 @@ Each plugin is sensitive to where you are and what you're doing, they reveal the
 * [ohmyzsh](https://github.com/robbyrussell/oh-my-zsh/tree/291e96dcd034750fbe7473482508c08833b168e3): Borrowed things like tab completion, fixing ls, tmux's vi-mode plugin.
 * [vimode-zsh](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/vi-mode) allows you to hit `esc` and navigate the current buffer using vim movement keys.
 
+## [Vim](https://en.wikipedia.org/wiki/Vim_(text_editor))
+
+* ',' can be used instead of ':'
+
 ## [Tmux](https://en.wikipedia.org/wiki/Tmux)
 
 * Ctrl-B has been remapped to Ctrl-a
 * Use vim movement keys to navigate panes
-	* h - left
-	* l - right
-	* j - down
-	* k - up
+	* Option + h - left
+	* Option + l  - right
+	* Option + j - down
+	* Option + k - up
 * Copy buffer is coppied to xclip.
 * Status bar tells you date, time, user, and hostname. Especially useful with nested ssh sessions. 
