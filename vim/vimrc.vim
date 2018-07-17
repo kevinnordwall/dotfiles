@@ -1,4 +1,21 @@
+set nocompatible
+filetype off
+set rtp+=/Users/oxen/.vim/bundle/Vundle.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+call vundle#begin()
+" Plugins go here
+	Plugin 'tmhedberg/SimpylFold'
+	Plugin 'gmarik/Vundle.vim'
+	Plugin 'vim-scripts/indentpython.vim'
+	Plugin 'w0rp/ale'
+
+call vundle#end()
+filetype plugin indent on
+	
+
 " General Vim settings
+	let python_highlight_all = 1
+
 	syntax on
 	let mapleader=","
 	set autoindent
@@ -7,8 +24,11 @@
 	set dir=/tmp/
 	set relativenumber 
 	set number
-
+	set foldmethod=indent
+	set foldlevel=99
 	set cursorline
+	set encoding=utf-8
+
 	hi Cursor ctermfg=White ctermbg=Yellow cterm=bold guifg=white guibg=yellow gui=bold
 
 	set hlsearch
@@ -23,6 +43,8 @@
 	nnoremap L $
 	nnoremap J G
 	nnoremap K gg
+	vnoremap <C-c> "+y
+	map <C-v> "+P
 
 	map <tab> %
 
@@ -99,4 +121,18 @@
 " Future stuff
 	"Swap line
 	"Insert blank below and above
+au BufNewFile,BufRead *.py
+	\ set tabstop=4
+	\ set softtabstop=4
+	\ set shiftwidth=4
+	\ set textwidth=4
+	\ set expandtab
+	\ set autoindent
+	\ set fileformat=unix
 
+au BufNewFile,BufRead *.js, *.html, *.css
+	\ set tabstop=2
+	\ set softtabstop=2
+	\ set shiftwidth=2
+
+au BufNewFile,Bufread *.py, *.pyw, *.c, *.h match BadWhitespace /\s\+$/
