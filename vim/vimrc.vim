@@ -1,6 +1,6 @@
 set nocompatible
 filetype off
-set rtp+=/Users/oxen/.vim/bundle/Vundle.vim
+set rtp+=/home/neo/.vim/bundle/Vundle.vim
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 call vundle#begin()
 " Plugins go here
