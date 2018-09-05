@@ -14,6 +14,7 @@ POWERLEVEL9K_RIGHT_SUBSEGMENT_SEPARATOR=$'\ue0b7'
 
 DEFAULT_USER=`whoami`
 
+
 # Imports
 source ~/powerlevel9k/powerlevel9k.zsh-theme
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/history.zsh
